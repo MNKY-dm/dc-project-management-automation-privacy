@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Politique de confidentialité de DC Project Management Automation.">
+  <title>Politique de confidentialité — DC Project Management Automation</title>
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f6f2;
+      --surface: #ffffff;
+      --text: #28251d;
+      --muted: #64615a;
+      --accent: #01696f;
+      --border: #dedad2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171614;
+        --surface: #201f1d;
+        --text: #e6e2dc;
+        --muted: #b5afa6;
+        --accent: #72c8cf;
+        --border: #403d38;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    main {
+      width: min(100% - 2rem, 760px);
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+
+    article {
+      padding: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+    }
+
+    p,
+    li {
+      max-width: 70ch;
+    }
+
+    .updated {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article>
+      <h1>Politique de confidentialité</h1>
+      <p class="updated">Dernière mise à jour : 14 septembre 2026</p>
+
+      <p>
+        Cette politique décrit la manière dont l’extension
+        <strong>DC Project Management Automation</strong> traite les informations
+        lorsqu’elle est utilisée dans Notion.
+      </p>
+
+      <h2>Finalité de l’extension</h2>
+      <p>
+        L’extension synchronise localement la propriété <em>Status</em> d’une tâche
+        Notion à partir de l’état de sa checklist. Elle applique les règles suivantes :
+      </p>
+
+      <ul>
+        <li>Aucune case cochée : <strong>À faire</strong></li>
+        <li>Une ou plusieurs cases cochées : <strong>En cours</strong></li>
+        <li>Toutes les cases cochées : <strong>Terminé</strong></li>
+      </ul>
+
+      <h2>Données consultées</h2>
+      <p>
+        Lorsqu’une page Notion compatible est ouverte, l’extension lit localement les
+        éléments nécessaires à son fonctionnement : l’état des cases à cocher de la
+        checklist, les libellés de structure de la page et la valeur affichée de la
+        propriété Status.
+      </p>
+
+      <h2>Stockage des préférences</h2>
+      <p>
+        L’extension utilise le stockage synchronisé du navigateur
+        (<code>chrome.storage.sync</code>) uniquement pour enregistrer les préférences
+        de l’utilisateur, telles que l’activation de l’automatisation, le délai avant
+        synchronisation et l’activation éventuelle du mode de débogage.
+      </p>
+
+      <h2>Partage et vente de données</h2>
+      <p>
+        L’extension ne vend pas de données personnelles. Elle ne transmet pas le
+        contenu des pages Notion, les checklists, les statuts ou les préférences de
+        l’utilisateur vers un serveur exploité par l’éditeur ou par un tiers.
+      </p>
+
+      <h2>Services tiers</h2>
+      <p>
+        L’extension interagit uniquement avec Notion dans le navigateur de
+        l’utilisateur, sur les domaines nécessaires à son fonctionnement :
+        <code>app.notion.com</code> et <code>www.notion.so</code>. L’utilisation de
+        Notion reste soumise à ses propres conditions et règles de confidentialité.
+      </p>
+
+      <h2>Conservation des données</h2>
+      <p>
+        Aucune donnée de contenu Notion n’est conservée par l’éditeur. Les préférences
+        enregistrées dans le stockage du navigateur restent sous le contrôle de
+        l’utilisateur et peuvent être supprimées en désinstallant l’extension ou en
+        réinitialisant ses réglages.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Pour toute question concernant cette politique, contactez :
+        <a href="mailto:dylan.moulin.dev@gmail.com">dylan.moulin.dev@gmail.com</a>.
+      </p>
+
+      <footer>
+        © 2026 DC Project Management Automation
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
